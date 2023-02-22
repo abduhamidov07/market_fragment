@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbarNav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  gap: 20px;
+  padding: 15px 0;
+  background-color: rgba(200, 205, 205, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.nav-link {
+  position: relative;
+  color: #000;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card {
+  margin: 75px 0 25px;
+}
+
+.card > button:first-child:active {
+  transform: scale(.91);
+}

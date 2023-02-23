@@ -13,7 +13,9 @@
           <i class="fa-solid fa-heart fs-3"></i>
         </span>
       </button>
-      <img src="../assets/futbolka-img.jpg" class="card-img-top" alt="..." />
+      <div class="card-img">
+        <img src="../assets/futbolka-img.jpg" class="card-img-top" alt="..." />
+      </div>
       <div class="card-body">
         <h5 class="card-title">Futbolka</h5>
         <div class="d-flex gap-4 mt-3">
@@ -48,6 +50,12 @@
           </div>
         </div>
         <p class="text-success">Sotuvda 12 dona bor</p>
+        <p class="fs-5 d-flex align-items-start gap-2 text-primary">
+          7$ <s class="text-warning fs-6">12$</s>
+          <span class="text-secondary"
+            >42% chegirma <i class="fa-solid fa-hand-holding-dollar"></i
+          ></span>
+        </p>
         <p>
           Jami: <span class="text-primary">{{ countFu * 7 }}$</span>
         </p>
@@ -73,7 +81,7 @@ export default {
     },
     changeFu() {
       this.showFu = !this.showFu;
-    }
+    },
   },
 };
 </script>

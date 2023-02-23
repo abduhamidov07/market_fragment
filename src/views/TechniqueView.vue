@@ -13,7 +13,9 @@
           <i class="fa-solid fa-heart fs-3"></i>
         </span>
       </button>
-      <img src="../assets/tv-img.jpg" class="card-img-top" alt="tv-img" />
+      <div class="card-img">
+        <img src="../assets/tv-img.jpg" class="card-img-top" alt="tv-img" />
+      </div>
       <div class="card-body">
         <h5 class="card-title">Televizor</h5>
         <div class="d-flex gap-4 mt-3">
@@ -48,6 +50,12 @@
           </div>
         </div>
         <p class="text-success">Sotuvda 6 dona bor</p>
+        <p class="fs-5 d-flex align-items-start gap-2 text-primary">
+          200$ <s class="text-warning fs-6">270$</s>
+          <span class="text-secondary"
+            >26% chegirma <i class="fa-solid fa-hand-holding-dollar"></i
+          ></span>
+        </p>
         <p>
           Jami: <span class="text-primary">{{ countTv * 200 }}$</span>
         </p>

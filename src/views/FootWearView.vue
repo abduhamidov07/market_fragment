@@ -13,7 +13,9 @@
           <i class="fa-solid fa-heart fs-3"></i>
         </span>
       </button>
-      <img src="../assets/poyabzal-img.jpg" class="card-img-top" alt="" />
+      <div class="card-img">
+        <img src="../assets/poyabzal-img.jpg" class="card-img-top" alt="" />
+      </div>
       <div class="card-body">
         <h5 class="card-title">Krossovka</h5>
         <div class="d-flex gap-4 mt-3">
@@ -48,6 +50,12 @@
           </div>
         </div>
         <p class="text-success">Sotuvda 18 dona bor</p>
+        <p class="fs-5 d-flex align-items-start gap-2 text-primary">
+          20$ <s class="text-warning fs-6">32$</s>
+          <span class="text-secondary"
+            >38% chegirma <i class="fa-solid fa-hand-holding-dollar"></i
+          ></span>
+        </p>
         <p>
           Jami: <span class="text-primary">{{ countPo * 20 }}$</span>
         </p>
